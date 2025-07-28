@@ -23,15 +23,33 @@
   </div>
   <!-- GRID - 2nd row - Logo central to layout either side carousel of images? -->
 <!-- --------------------------------------------------------SPACE SPACE SPACE SPACE ----------------------------------------------------- -->
-<form action=""> 
+<form action="post"> 
     <div class="row">
-        <div class="col">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="col-md-3">
+            <label for="forename">Forename:</label>
+            <input type="text" id="forename" placeholder="Forename" name="forename" required>
         </div>
-        <div class="col">
+        <div class="col-md-3">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" placeholder="Surname" name="surname" required>
+        </div>
+        <div class="col-md-6">
             <label for="email">Email:</label>
-         <input type="email" id="email" name="email" required>
+         <input type="email" id="email" placeholder="Email" name="email" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Phone" name="phone" required>
+        </div>
+        <div class="col-md-3">
+            <label for="date">Wedding Date:</label>
+            <input type="date" id="date" placeholder="Wedding Date" required>
+        </div>
+        <div class="col-md-6">
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue" placeholder="Venue" name="venue" required>
         </div>
     </div>
 </form> 
