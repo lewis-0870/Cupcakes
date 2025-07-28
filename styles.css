@@ -10,6 +10,24 @@
   border: 1px solid black;  
  }
 
+#carousel {
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  
+
+}
+.rowtwo {
+  height: 100px;
+}
+
+
+/* wedding enquiry form styling */
+
+ /* forms page wedding styling */
+
  input, select, textarea {
   width: 100%;
   padding: 10px;
