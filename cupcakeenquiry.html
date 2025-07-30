@@ -15,11 +15,17 @@
   <div class="row">
     <div class="col">
       <nav class="navbar bg-body-tertiary">
-  <form class="container-fluid justify-content-start">
-    <button class="btn btn-outline-success me-2" onclick="location.href='index.html'" type="button">Home</button>
-    <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-  </form>
-</nav>
+        <form class="container-fluid justify-content-start">
+        <button class="btn btn-outline-success me-2" onclick="location.href='index.html'" type="button">Home</button>
+         <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+         </form>
+  </nav>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <img src="https://i.ibb.co/CsQhnN0q/Gemini-Generated-Image-f2jcv1f2jcv1f2jc.png" alt="Gemini-Generated-Image-f2jcv1f2jcv1f2jc" border="0" width="300">
     </div>
   </div>
   <!-- GRID - 2nd row - Logo central to layout either side carousel of images? -->
@@ -44,30 +50,77 @@
         </div>
     </div>
       <!-- GRID - Cupcake order form -->
-
+<!-- ----------------- VANILLA CUPCAKE ORDER FORM ------- -->
     <div class="row">
-      <div class="col-md-9">
-        <div class="input-group mb-3">
-          <div class="input-group-text">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          </div>
-        <input type="text" class="form-control" aria-label="Text input with checkbox">
-        </div>
+      <div class="col-md-3">
+<img src="https://i.ibb.co/C5wFWXVS/Gemini-Generated-Image-3vt4683vt4683vt4.png" alt="Gemini-Generated-Image-3vt4683vt4683vt4" border="0" width="75">
       </div>
+      <div class="col-md-6">
+       <p> Vanilla Cupcakes </p>
+       </div>
+      <!-- dropdown linked to order form below -->
       <div class="col-md-3">  
         <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Quantity
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">6</a></li>
-    <li><a class="dropdown-item" href="#">12</a></li>
-    <li><a class="dropdown-item" href="#">18</a></li>
+    <li><a onclick="Vanilla0()" class="dropdown-item" href="#">0</a></li>
+    <li><a onclick="Vanilla6()" class="dropdown-item" href="#">6</a></li>
+    <li><a onclick="Vanilla12()" class="dropdown-item" href="#">12</a></li>
+    <li><a onclick="Vanilla18()" class="dropdown-item" href="#">18</a></li>
   </ul>
 </div>
       </div>
     </div>
-    <!-- third row --------- space for any additional messages -->
+<!-- CHOCOLATE CUPCAKE ORDER FORM   ------------------------------- -->
+      <div class="row">
+        <div class="col-md-3">
+        <img src="https://i.ibb.co/yFr6d4X9/Gemini-Generated-Image-6s6kv86s6kv86s6k.png" alt="Gemini-Generated-Image-6s6kv86s6kv86s6k" border="0" width="75">
+      </div>
+      <div class="col-md-6">
+       <p> Chocolate Cupcakes </p>
+       </div>
+      <!-- dropdown linked to order form below -->
+      <div class="col-md-3">  
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Quantity
+  </button>
+  <ul class="dropdown-menu">
+    <li><a onclick="Choc0()" class="dropdown-item" href="#">0</a></li>
+    <li><a onclick="Choc6()" class="dropdown-item" href="#">6</a></li>
+    <li><a onclick="Choc12()" class="dropdown-item" href="#">12</a></li>
+    <li><a onclick="Choc18()" class="dropdown-item" href="#">18</a></li>
+  </ul>
+</div>
+      </div>
+    </div>
+
+    <!-- STRAWBERRY CUPCAKE ORDER FORM   ------------------------------- -->
+      <div class="row">
+        <div class="col-md-3">
+        <img src="https://i.ibb.co/WvSxgwDR/Gemini-Generated-Image-7kf0nn7kf0nn7kf0.png" alt="Gemini-Generated-Image-7kf0nn7kf0nn7kf0" border="0" width="75">
+      </div>
+      <div class="col-md-6">
+       <p> Strawberry Cupcakes </p>
+       </div>
+      <!-- dropdown linked to order form below -->
+      <div class="col-md-3">  
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Quantity
+  </button>
+  <ul class="dropdown-menu">
+    <li><a onclick="Straw0()" class="dropdown-item" href="#">0</a></li>
+    <li><a onclick="Straw6()" class="dropdown-item" href="#">6</a></li>
+    <li><a onclick="Straw12()" class="dropdown-item" href="#">12</a></li>
+    <li><a onclick="Straw18()" class="dropdown-item" href="#">18</a></li>
+  </ul>
+</div>
+      </div>
+    </div>
+<!-- third row --------- space for any additional messages -->
     <div class="row">
         <div class="col-md-10">
             <label for="enquire">Message:</label>
@@ -77,20 +130,63 @@
             <button type="submit" class="btn btn-primary grid-center">Submit</button>
         </div>
     </div>
+    
 </form>
-
+<div>
 <div class="row">
-  <div class="col-md">
-    <p>Invoice</p>
-   <p id="demo"></p>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "6 Vanilla Cupcakes";
-}
-function myFunction() {
-  document.getElementById("demo").innerHTML = "12 Vanilla Cupcakes";
-}
-</script>
-  </div>
+  <div class="row-cols-md">
 
+        <p id="vanilla" class="order-form">   </p>
+          <script>
+            function Vanilla0() {
+            document.getElementById("vanilla").innerHTML = "  ";
+            }
+            function Vanilla6() {
+            document.getElementById("vanilla").innerHTML = "6 Vanilla Cupcakes";
+            }
+            function Vanilla12() {
+            document.getElementById("vanilla").innerHTML = "12 Vanilla Cupcakes";
+            }
+            function Vanilla18() {
+            document.getElementById("vanilla").innerHTML = "18 Vanilla Cupcakes";
+            }
+          </script>
+  </div>
+</div>
+  
+<!-- <div class="row">  -->
+  <div class="row-cols-md">
+        <p id="chocolate" class="order-form"> </p>
+        <script>
+          function Choc0() {
+          document.getElementById("chocolate").innerHTML = "  ";
+          }
+          function Choc6() {
+          document.getElementById("chocolate").innerHTML = "6 Chocolate Cupcakes";
+          }
+          function Choc12() {
+          document.getElementById("chocolate").innerHTML = "12 Chocolate Cupcakes";
+          }
+          function Choc18() {
+          document.getElementById("chocolate").innerHTML = "18 Chocolate Cupcakes";
+          }
+        </script>
+  <!-- </div> -->
+    <div class="row-cols-md">
+        <p id="strawberry" class="order-form"> </p>
+        <script>
+          function Straw0() {
+          document.getElementById("strawberry").innerHTML = "  ";
+          }
+          function Straw6() {
+          document.getElementById("strawberry").innerHTML = "6 Strawberry Cupcakes";
+          }
+          function Straw12() {
+          document.getElementById("strawberry").innerHTML = "12 Strawberry Cupcakes";
+          }
+          function Straw18() {
+          document.getElementById("strawberry").innerHTML = "18 Strawberry Cupcakes";
+          }
+        </script>
+</div>
 </div>
