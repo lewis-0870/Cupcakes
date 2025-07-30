@@ -49,3 +49,14 @@
      height: 100%;
       width: 100%;
    }
+
+   .order-form {
+    text-align: right;
+    font-weight: 400;
+    padding-top: 0;
+    margin-top: 0;
+
+   }
+   .navbar-background {
+    background-color: blue;
+   }
