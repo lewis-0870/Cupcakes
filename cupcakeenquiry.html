@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   </head>
@@ -23,9 +24,9 @@
   </div>
   <!-- GRID - 2nd row - Logo central to layout either side carousel of images? -->
 <!-- --------------------------------------------------------SPACE SPACE SPACE SPACE ----------------------------------------------------- -->
-<form name="weddingenquiry" netlify> 
+<form name="cupcakeenquiry" netlify> 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2">
             <label for="forename">Forename:</label>
             <input type="text" id="forename" placeholder="Forename" name="forename" required>
         </div>
@@ -33,30 +34,63 @@
             <label for="surname">Surname:</label>
             <input type="text" id="surname" placeholder="Surname" name="surname" required>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <label for="email">Email:</label>
          <input type="email" id="email" placeholder="Email" name="email" required>
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-3">
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" placeholder="Phone" name="phone" required>
         </div>
-        <div class="col-md-3">
-            <label for="date">Wedding Date:</label>
-            <input type="date" id="date" placeholder="Wedding Date" required>
-        </div>
-        <div class="col-md-6">
-            <label for="venue">Venue:</label>
-            <input type="text" id="venue" placeholder="Venue" name="venue" required>
-        </div>
     </div>
+      <!-- GRID - Cupcake order form -->
+
+    <div class="row">
+      <div class="col-md-9">
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+        </div>
+      </div>
+      <div class="col-md-3">  
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Quantity
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">6</a></li>
+    <li><a class="dropdown-item" href="#">12</a></li>
+    <li><a class="dropdown-item" href="#">18</a></li>
+  </ul>
+</div>
+      </div>
+    </div>
+    <!-- third row --------- space for any additional messages -->
     <div class="row">
         <div class="col-md-10">
             <label for="enquire">Message:</label>
-            <textarea id="enquire" placeholder="Your Message" name="enquire"></textarea>
+            <textarea id="enquire" placeholder="Cupcakes must be ordered in batches of 6. Once ordered a member of our team will be in touch to confirm orders. Please leave any additional information here." name="enquire"></textarea>
         </div>
         <div class="col-md-2">
             <button type="submit" class="btn btn-primary grid-center">Submit</button>
-</form> 
+        </div>
+    </div>
+</form>
+
+<div class="row">
+  <div class="col-md">
+    <p>Invoice</p>
+   <p id="demo"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "6 Vanilla Cupcakes";
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = "12 Vanilla Cupcakes";
+}
+</script>
+  </div>
+
+</div>
