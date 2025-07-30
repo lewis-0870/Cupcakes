@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="background-color: #ffff7c;">
 <!-- navigation bar at the top of the page. navbar is to link to other pages button for menu items/shop and another button can be the home page -->
 <!-- --------------------------------------------------------SPACE SPACE SPACE SPACE ----------------------------------------------------- -->
-<div class="container text-center">
+<div class="container text-center border border-danger">
   <div class="row">
     <div class="col">
-      <nav class="navbar bg-body-tertiary">
+      <nav class="navbar navbar-light" style="background-color: #ff7c7c;">
         <form class="container-fluid justify-content-start">
         <button class="btn btn-outline-success me-2" onclick="location.href='index.html'" type="button">Home</button>
          <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
@@ -31,37 +31,37 @@
   <!-- GRID - 2nd row - Logo central to layout either side carousel of images? -->
 <!-- --------------------------------------------------------SPACE SPACE SPACE SPACE ----------------------------------------------------- -->
 <form name="cupcakeenquiry" netlify> 
-    <div class="row">
+    <div class="row border border-danger rounded">
         <div class="col-md-2">
             <label for="forename">Forename:</label>
-            <input type="text" id="forename" placeholder="Forename" name="forename" required>
+            <input style="background-color: #ffcaca;" type="text" id="forename" placeholder="Forename" name="forename" required>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" >
             <label for="surname">Surname:</label>
-            <input type="text" id="surname" placeholder="Surname" name="surname" required>
+            <input style="background-color: #ffcaca;" type="text" id="surname" placeholder="Surname" name="surname" required>
         </div>
         <div class="col-md-4">
             <label for="email">Email:</label>
-         <input type="email" id="email" placeholder="Email" name="email" required>
+         <input style="background-color: #ffcaca;" type="email" id="email" placeholder="Email" name="email" required>
         </div>
         <div class="col-md-3">
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" placeholder="Phone" name="phone" required>
+            <input style="background-color: #ffcaca;" style="background-color: #ffcaca;" type="tel" id="phone" placeholder="Phone" name="phone" required>
         </div>
     </div>
       <!-- GRID - Cupcake order form -->
 <!-- ----------------- VANILLA CUPCAKE ORDER FORM ------- -->
-    <div class="row">
-      <div class="col-md-3">
+    <div class="row border border-danger rounded">
+      <div class="col-md-3 ">
 <img src="https://i.ibb.co/C5wFWXVS/Gemini-Generated-Image-3vt4683vt4683vt4.png" alt="Gemini-Generated-Image-3vt4683vt4683vt4" border="0" width="75">
       </div>
-      <div class="col-md-6">
-       <p> Vanilla Cupcakes </p>
+      <div class="col-md-6 align-middle">
+       <p class=grid-container> Vanilla Cupcakes </p>
        </div>
       <!-- dropdown linked to order form below -->
       <div class="col-md-3">  
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown grid-container">
+  <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Quantity
   </button>
   <ul class="dropdown-menu">
@@ -74,17 +74,17 @@
       </div>
     </div>
 <!-- CHOCOLATE CUPCAKE ORDER FORM   ------------------------------- -->
-      <div class="row">
+      <div class="row border border-danger rounded">
         <div class="col-md-3">
         <img src="https://i.ibb.co/yFr6d4X9/Gemini-Generated-Image-6s6kv86s6kv86s6k.png" alt="Gemini-Generated-Image-6s6kv86s6kv86s6k" border="0" width="75">
       </div>
       <div class="col-md-6">
-       <p> Chocolate Cupcakes </p>
+       <p class=grid-container> Chocolate Cupcakes </p>
        </div>
       <!-- dropdown linked to order form below -->
       <div class="col-md-3">  
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown grid-container">
+  <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Quantity
   </button>
   <ul class="dropdown-menu">
@@ -98,17 +98,17 @@
     </div>
 
     <!-- STRAWBERRY CUPCAKE ORDER FORM   ------------------------------- -->
-      <div class="row">
+      <div class="row border border-danger rounded">
         <div class="col-md-3">
         <img src="https://i.ibb.co/WvSxgwDR/Gemini-Generated-Image-7kf0nn7kf0nn7kf0.png" alt="Gemini-Generated-Image-7kf0nn7kf0nn7kf0" border="0" width="75">
       </div>
       <div class="col-md-6">
-       <p> Strawberry Cupcakes </p>
+       <p class=grid-container> Strawberry Cupcakes </p>
        </div>
       <!-- dropdown linked to order form below -->
       <div class="col-md-3">  
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown grid-container">
+  <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Quantity
   </button>
   <ul class="dropdown-menu">
@@ -124,7 +124,7 @@
     <div class="row">
         <div class="col-md-10">
             <label for="enquire">Message:</label>
-            <textarea id="enquire" placeholder="Cupcakes must be ordered in batches of 6. Once ordered a member of our team will be in touch to confirm orders. Please leave any additional information here." name="enquire"></textarea>
+            <textarea style="background-color: #ffcaca;" id="enquire" placeholder="Please leave any additional information here." name="enquire"></textarea>
         </div>
         <div class="col-md-2">
             <button type="submit" class="btn btn-primary grid-center">Submit</button>

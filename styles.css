@@ -6,9 +6,9 @@
 
  */
 
- * {
+ /* * {
   border: 1px solid black;  
- }
+ } */
 
 #carousel {
   width: 100%;
@@ -57,6 +57,15 @@
     margin-top: 0;
 
    }
-   .navbar-background {
-    background-color: blue;
-   }
+  .grid-container {
+    padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+  .grid-img {
+    padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 150;
+  }
